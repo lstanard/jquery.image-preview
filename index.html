@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<style type="text/css">
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				margin: 0;
+				padding-right: 0;
+			}
+			img {
+				max-width :100%;
+			}
+			#wrapper {
+				padding: 0 25%;
+				width: 50%;
+			}
+			.feature {
+				border: 5px solid #dfdfdf;
+				margin: 0;
+				padding: 30px;
+				text-align: center;
+			}
+			.feature img {
+				margin: 0 auto;
+			}
+			.thumbnails {
+				list-style: none;
+				text-align: center;
+			}
+			.thumbnails li {
+				display: inline-block;
+			}
+			.thumbnails li.active a {
+				background-color: #ababab;
+			}
+			.thumbnails li a {
+				background-color: #dfdfdf;
+				display: inline-block;
+				padding: 8px 12px;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Simple Image Preview</h1>
+			<div id="product-preview">
+				<aside class="product-photos">
+					<figure class="feature">
+						<img src="http://www.fillmurray.com/400/500" alt=" ">
+					</figure>
+					<ul class="thumbnails">
+						<li><a href="http://www.fillmurray.com/400/500">1</a></li>
+						<li><a href="http://www.fillmurray.com/200/450">2</a></li>
+						<li><a href="http://www.fillmurray.com/300/300">3</a></li>
+						<li><a href="http://www.fillmurray.com/600/500">4</a></li>
+						<li><a href="http://www.fillmurray.com/450/300">5</a></li>
+					</ul>
+				</aside>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="jquery.image-previewer.js"></script>
+		<script>
+			$('#product-preview').imagePreviewer();
+		</script>
+	</body>
+</html>
